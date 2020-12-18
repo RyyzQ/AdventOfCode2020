@@ -46,7 +46,6 @@ def isValidPassportPart2(passport, rules):
             elif key == "eyr":
                 correctFields += 2020 <= int(value) <= 2030
             elif key == "hgt":
-                minustwo = value[-2:]
                 if value[-2:] == "cm":
                     correctFields += (150 <= float(value[:-2]) <= 193)
                 elif value[-2:] =="in":
